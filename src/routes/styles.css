@@ -1,0 +1,21 @@
+:global(body) {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+form {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0,
