@@ -1,58 +1,43 @@
-# Svelte library
+En caso de no funcionar con los archivos subidos, extraer el archivo "CRUDSVELTE.rar"
 
-Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
+# Aplicación CRUD en Svelte
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+Cómo empezar
 
-## Creating a project
+1. Abre la aplicación en tu navegador (normalmente en `http://localhost:5000` si la estás ejecutando en tu computadora).
+2. Verás un formulario en la parte superior y debajo una lista de publicaciones.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project in the current directory
-npx sv create
+Qué puedes hacer
 
-# create a new project in my-app
-npx sv create my-app
-```
+### ➕ Crear publicación
+- Escribe un **título** y un **contenido** en el formulario.
+- Haz clic en el botón **Crear**.
+- Tu nueva publicación aparecerá al inicio de la lista.
 
-## Developing
+###  Leer publicaciones
+- Todas las publicaciones se muestran en la pantalla.
+- Cada una incluye su **título** y **contenido**.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Editar publicación
+- Haz clic en el botón **Editar** de la publicación que quieras modificar.
+- El formulario se llenará con los datos actuales.
+- Cambia lo que necesites y haz clic en **Actualizar**.
+- La publicación se actualizará en la lista.
 
-```sh
-npm run dev
+### Eliminar publicación
+- Haz clic en el botón **Eliminar** de la publicación que quieras borrar.
+- La publicación desaparecerá de la lista.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### ❌ Cancelar edición
+- Si estabas editando y no quieres guardar cambios, haz clic en **Cancelar**.
+- El formulario volverá al modo de creación.
+---
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+## Notas importantes
 
-## Building
-
-To build your library:
-
-```sh
-npm pack
-```
-
-To create a production version of your showcase app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```sh
-npm publish
-```
+- Los datos se guardan **solo mientras la aplicación está abierta**.  
+  Si recargas la página, las publicaciones se pierden.
+- Es una aplicación pensada para **aprender y practicar** los conceptos básicos de Svelte.
+- En el futuro se puede mejorar para guardar datos en `localStorage` o conectarse a una API real.
